@@ -1,0 +1,8 @@
+//
+// Created by WENYi on 2024/4/12.
+//
+
+#ifndef BASEKERNELOS_NAMED_PIPE_H
+#define BASEKERNELOS_NAMED_PIPE_H
+
+#endif //BASEKERNELOS_NAMED_PIPE_H
