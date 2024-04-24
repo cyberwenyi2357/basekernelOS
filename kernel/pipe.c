@@ -53,6 +53,7 @@ void pipe_flush(struct pipe *p)
 	}
 }
 
+
 void pipe_delete(struct pipe *p)
 {
 	if(!p) return;
@@ -65,7 +66,6 @@ void pipe_delete(struct pipe *p)
 		kfree(p);
 	}
 }
-
 static int pipe_write_internal(struct pipe *p, char *buffer, int size, int blocking )
 {
 	if(!p || !buffer) {

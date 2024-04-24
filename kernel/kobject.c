@@ -75,6 +75,14 @@ struct kobject *kobject_create_pipe(struct pipe *p)
 	return k;
 }
 
+struct kobject *kobject_create_named_pipe(struct pipe *p)
+{
+    struct kobject *k = kobject_create();
+    k->type = KOBJECT_PIPE;
+    k->data.pipe = p;
+    return k;
+}
+
 struct kobject *kobject_addref(struct kobject *k)
 {
 	k->refcount++;

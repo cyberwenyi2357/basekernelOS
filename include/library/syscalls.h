@@ -36,6 +36,8 @@ int syscall_open_dir( int fd, const char *path, kernel_flags_t flags );
 int syscall_open_window(int fd, int x, int y, int w, int h);
 int syscall_open_console(int fd);
 int syscall_open_pipe();
+int syscall_make_named_pipe();
+int syscall_open_named_pipe();
 
 /* Syscalls that manipulate kernel objects for this process. */
 
